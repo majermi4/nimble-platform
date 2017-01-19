@@ -1,0 +1,25 @@
+{
+    "name": "majermi4/nimble_platform",
+    "description": "Nimble platform is a Symfony application which includes all the core Nimble admin bundles.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michal Majer",
+            "email": "majermi4@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./src/nimble/CoreBundle",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "require": {
+        "majermi4/nimble_core_bundle": "@dev"
+    },
+    "minimum-stability": "alpha"
+}
