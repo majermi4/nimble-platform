@@ -9,22 +9,13 @@
             "email": "majermi4@gmail.com"
         }
     ],
-    "repositories": [
-        {
-            "type": "path",
-            "url": "./src/CoreBundle",
-            "options": {
-                "symlink": true
-            }
-        }
-    ],
-    "require": {
-        "majermi4/nimble_core_bundle": "@dev"
-    },
     "autoload": {
         "psr-4": {
             "Nimble\\": "src/"
         }
     },
-    "minimum-stability": "alpha"
+    "minimum-stability": "alpha",
+    "require": {
+        "symfony/symfony": "^3.2"
+    }
 }
