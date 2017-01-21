@@ -21,5 +21,10 @@
     "require": {
         "majermi4/nimble_core_bundle": "@dev"
     },
+    "autoload": {
+        "psr-4": {
+            "Nimble\\": "src/",
+        },
+    },
     "minimum-stability": "alpha"
 }
