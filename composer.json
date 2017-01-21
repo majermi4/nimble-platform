@@ -23,8 +23,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Nimble\\": "src/",
-        },
+            "Nimble\\": "src/"
+        }
     },
     "minimum-stability": "alpha"
 }
