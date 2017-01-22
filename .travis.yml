@@ -9,7 +9,6 @@ before_install:
   - phpenv config-rm xdebug.ini
 
 before_script:
-  - cp app/config/parameters.yml.travis app/config/parameters.yml
   - composer install
   - bin/console doctrine:database:create --env=test
   - bin/console doctrine:schema:create --env=test

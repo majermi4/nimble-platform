@@ -17,3 +17,10 @@ parameters:
 
     # A secret key that's used to generate certain security-related tokens
     secret:            ThisTokenIsNotSoSecretChangeIt
+
+    nimble.globals.layout:
+        app_name: "AdminLTE"
+        logo_lg: "<b>Admin</b>LTE"
+        logo_mini: "<b>LTE</b>"
+        index_route: "nimble_dashboard"
+        theme_skin: "skin-blue"
