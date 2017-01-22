@@ -1,0 +1,103 @@
+{% extends 'CoreBundle:layout:base.html.twig' %}
+
+{% set title = "Homepage!" %}
+{% set icon = "dashboard" %}
+
+{% block content %}
+
+<div class="row">
+
+   <div class="col-md-4">
+      <!-- general form elements -->
+      <div class="box box-primary">
+         <div class="box-header with-border">
+            <h3 class="box-title">Najít platbu:</h3>
+         </div>
+         <!-- /.box-header -->
+         <!-- form start -->
+         <form role="form" action="" method="post">
+            <div class="box-body">
+               <div class="form-group">
+                  <label for="exampleInputEmail1">Variabilní číslo</label>
+                  <input type="number" class="form-control" name="variableSymbol" placeholder="Vložte variabilní číslo">
+               </div>
+               <input type="submit" class="btn btn-primary pull-right" value="Hledat">
+            </div>
+            <!-- /.box-body -->
+
+         </form>
+      </div>
+      <!-- /.box -->
+
+   </div> <!-- /.col -->
+
+
+   <div class="col-md-4">
+      <!-- general form elements -->
+      <div class="box box-primary">
+         <div class="box-header with-border">
+            <h3 class="box-title">Napsat e-mail lidem podle:</h3>
+         </div>
+         <!-- /.box-header -->
+         <!-- form start -->
+         <form role="form" action="" method="post" class="form-horizontal">
+
+            <div class="box-body">
+
+               <div class="form-group">
+                  <label class="col-sm-4 control-label">Věk od:</label>
+
+                  <div class="col-sm-8">
+                     <input type="number" class="form-control" name="age_from" placeholder="Věk od">
+                  </div>
+               </div>
+
+               <div class="form-group">
+                  <label class="col-sm-4 control-label">Věk do:</label>
+
+                  <div class="col-sm-8">
+                     <input type="number" class="form-control" name="age_to" placeholder="Věk do">
+                  </div>
+               </div>
+
+               <div class="form-group">
+                  <label class="col-sm-4 control-label">Pohlaví:</label>
+
+                  <div class="col-sm-8">
+                     <select class="form-control" name="gender">
+                        <option value="2">Muži i Ženy</option>
+                        <option value="1">Muži</option>
+                        <option value="0">Ženy</option>
+                     </select>
+                  </div>
+               </div>
+
+               <div class="form-group">
+                  <label class="col-sm-4 control-label">Registrováni:</label>
+
+                  <div class="col-sm-8">
+                     <select class="form-control" name="maxMonthsOfBeingRegistered">
+                        <option value="0">Kdykoliv</option>
+                        <option value="24">Za poslední 2 roky</option>
+                        <option value="12">Za poslední 1 rok</option>
+                        <option value="8">Za posledních 8 měsíců</option>
+                        <option value="6">Za posledních 6 měsíců</option>
+                        <option value="3">Za posledních 3 měsíce</option>
+                        <option value="2">Za posledních 2 měsíce</option>
+                        <option value="1">Za posledních 1 měsíc</option>
+                     </select>
+                  </div>
+               </div>
+
+               <input type="submit" class="btn btn-primary pull-right" value="Vyhledat">
+
+            </div>
+
+         </form>
+      </div> <!-- /.box -->
+
+   </div> <!-- /.col-md-4 -->
+
+</div> <!-- /.row -->
+
+{% endblock %}

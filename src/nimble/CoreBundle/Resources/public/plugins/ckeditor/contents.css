@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&subset=latin-ext');
+
+/*
+Copyright (c) 2003-2016, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or http://ckeditor.com/license
+*/
+
+body
+{
+/*	font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+	font-size: 12px;
+	color: #333;
+	background-color: #fff;*/
+	margin: 20px;
+}
+/*
+.cke_editable
+{
+	font-size: 13px;
+	line-height: 1.6;
+}
+
+blockquote
+{
+	font-style: italic;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	padding: 2px 0;
+	border-style: solid;
+	border-color: #ccc;
+	border-width: 0;
+}
+
+.cke_contents_ltr blockquote
+{
+	padding-left: 20px;
+	padding-right: 8px;
+	border-left-width: 5px;
+}
+
+.cke_contents_rtl blockquote
+{
+	padding-left: 8px;
+	padding-right: 20px;
+	border-right-width: 5px;
+}
+
+a
+{
+	color: #0782C1;
+}
+*/
+ol,ul,dl
+{
+	/* IE7: reset rtl list margin. (#7334) */
+	*margin-right: 0px;
+	/* preserved spaces for list items with text direction other than the list. (#6249,#8049)*/
+	padding: 0 40px;
+}
+/*
+h1,h2,h3,h4,h5,h6
+{
+	font-weight: normal;
+	line-height: 1.2;
+}
+
+hr
+{
+	border: 0px;
+	border-top: 1px solid #ccc;
+}
+
+img.right
+{
+	border: 1px solid #ccc;
+	float: right;
+	margin-left: 15px;
+	padding: 5px;
+}
+
+img.left
+{
+	border: 1px solid #ccc;
+	float: left;
+	margin-right: 15px;
+	padding: 5px;
+}
+
+pre
+{
+	white-space: pre-wrap; /* CSS 2.1 */
+/*	word-wrap: break-word; /* IE7 */
+/*	-moz-tab-size: 4;
+	tab-size: 4;
+}
+
+.marker
+{
+	background-color: Yellow;
+}
+
+span[lang]
+{
+	font-style: italic;
+}
+
+figure
+{
+	text-align: center;
+	border: solid 1px #ccc;
+	border-radius: 2px;
+	background: rgba(0,0,0,0.05);
+	padding: 10px;
+	margin: 10px 20px;
+	display: inline-block;
+}
+
+figure > figcaption
+{
+	text-align: center;
+	display: block; /* For IE8 */
+/*}
+
+a > img {
+	padding: 1px;
+	margin: 1px;
+	border: none;
+	outline: 1px solid #0782C1;
+}
+
+*/
+
+div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol, li, dl, dt, dd, form, a, fieldset, th, td {
+	margin: 0; padding: 0; border: 0; outline: none;
+}
+
+body {
+	font-family: 'Open sans', 'Arial', 'Helvetica';
+	font-size: 15px;
+	line-height: 25px;
+	color: #666;
+}
+p, ul {
+	font-size: 15px;
+}
+p {
+	padding-bottom: 10px;
+}
+ul {
+	margin-bottom: 25px;
+	padding: 0px;
+}
+ul li {
+	padding-bottom: 8px;
+	list-style: none;
+	background: url("../../../../bundles/web/images/bullet-arrow.jpg") no-repeat;
+	background-position: 0px 5px;
+	background-size: 15px 15px;
+	padding-left: 30px;
+}
+a {
+	color: #c4241d;
+}
+h1 {
+	font-family: 'Comfortaa', 'cursive';
+	color: #c4241d;
+	font-size: 36px;
+	padding-top: 30px;
+	margin-bottom: 20px;
+	line-height: 40px;
+}
+h2 {
+	font-family: 'Comfortaa', 'cursive';
+	color: #c4241d;
+	font-size: 30px;
+	padding-top: 20px;
+	padding-bottom: 15px;
+	line-height: 34px;
+}
+h3  {
+	font-family: 'Comfortaa', 'cursive';
+	color: #c4241d;
+	font-size: 26px;
+	padding-top: 18px;
+	padding-bottom: 13px;
+}
+h4 {
+	color: #333;
+	font-size: 22px;
+	margin-top: 16px;
+	margin-bottom: 12px;
+}
+
+img {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	max-width: 100%;
+}
+img.left {
+	float: left;
+	margin-right: 25px;
+}
+img.right {
+	float: right;
+	margin-left: 25px;
+}
+
+h1.with-line, h2.with-line {
+	background-image: url("../../../../bundles/web/images/horizontal-line.jpg");
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	padding-bottom: 30px;
+	margin-bottom: 10px;
+}
+
+
+
+
+table { border-collapse: collapse; font-size: 13px; }
+td, th { border: 1px solid #fff; padding: 3px 5px; background: #EFEFEF; }
+th { background: #DDDDDD; }
+
+/* OTHER */
+.gray_bg { background: #eee; padding: 7px 10px 7px; margin-bottom: 15px; }
+/*.gray_bg p { padding-bottom: 5px !important; }*/
+.no-style { border: none !important; padding: 0px !important; background: none !important; }
+.clearer { clear: both; }

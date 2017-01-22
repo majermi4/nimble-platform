@@ -1,3 +1,8 @@
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+
+nimble_core:
+    resource: "@CoreBundle/Controller/"
+    type:     annotation
+    prefix:   /admin

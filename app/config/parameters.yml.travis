@@ -3,3 +3,10 @@ parameters:
     database_password: ~
     database_name: nimble_platform
     # Other parameters
+
+    nimble.globals.layout:
+        app_name: "AdminLTE"
+        logo_lg: "<b>Admin</b>LTE"
+        logo_mini: "<b>LTE</b>"
+        index_route: "nimble_dashboard"
+        theme_skin: "skin-blue"

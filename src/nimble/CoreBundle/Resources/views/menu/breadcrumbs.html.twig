@@ -1,0 +1,13 @@
+{% block root %}
+    {% if menu_manipulator(item) %}
+        <ol class="breadcrumb">
+            {%- for  link in menu_manipulator(item) %}
+                {%- if loop.index == 1 %}
+                    <li><a href="{{ path(layout.index_route) }}">{{ layout.app_name }}</a></li>
+                {%- else %}
+                    <li>{#<a href="{{ link.uri }}">#}{{ link.label | trans }}{#</a>#}</li>
+                {%- endif %}
+            {%- endfor %}
+        </ol>
+    {% endif %}
+{% endblock %}
