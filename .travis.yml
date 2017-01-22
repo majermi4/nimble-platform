@@ -3,8 +3,10 @@ language: php
 php:
     - 5.6
 
-before_script:
+before_install:
   - phpenv config-rm xdebug.ini
+
+before_script:
   - cp app/config/parameters.yml.travis app/config/parameters.yml
   - composer install
   - bin/console doctrine:database:create --env=test
